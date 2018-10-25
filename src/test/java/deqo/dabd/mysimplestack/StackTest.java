@@ -11,14 +11,23 @@ import static org.junit.Assert.*;
 public class StackTest {
 
     public Stack s;
+    public App app;
+    public Item item;
+    //fixture
     @Before
     public void setUp() throws Exception {
     s = new Stack();
+    app = new App();
+    item = new Item(0);
     }
 
     @After
     public void tearDown() throws Exception {
         s = null;
+    }
+
+    @Test
+    public void testItemSetValeur() {  item.setValeur(1); assertEquals(1,item.getValeur());
     }
 
     @Test
