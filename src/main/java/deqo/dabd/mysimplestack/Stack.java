@@ -39,6 +39,7 @@ public class Stack implements SimpleStack {
     public Item pop() throws EmptyStackException {
         if (this.isEmpty()) {
             throw new EmptyStackException();
+
         } else {
             return this.liste.remove(0);
         }

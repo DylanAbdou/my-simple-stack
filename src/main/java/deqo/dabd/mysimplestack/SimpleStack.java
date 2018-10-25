@@ -8,5 +8,6 @@ public interface SimpleStack {
     int getSize();
     void push (Item item);
     Item peek() throws EmptyStackException;
+
     Item pop() throws EmptyStackException;
 }
